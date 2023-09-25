@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Website Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Builders</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+  .fakeimg {
+    height: 200px;
+    background: #f8bb38;
+  }
+  .navbar {
+    background-color: rgb(2, 2, 75);
+    max-width: 75%; /* You can adjust the percentage as needed */
+    margin: 0 auto; /* Center the navbar horizontally */
+    margin-top: -59px;
+    border-radius: 0;
+    height: 60px ;
+    font-family: 'Open Sans', sans-serif; /* Apply the custom font to the navbar */
+    font-weight: bold;
+  }
+
+
+  .jumbotron {
+      background-color: #fdd245;;
+      height: 160px;
+      margin-bottom: 0;
+      padding-top: 8px; 
+    }
+   
+
+  .custom-jumbotron h1 {
+    font-weight: bold;
+    margin-left: -1000px;
+    color: black;
+    height: 62px;
+  }
+  .navbar-inverse .navbar-nav > li > a {
+    color: white; /* Set the color of the menu items to white */
+  }
+
+  .navbar-inverse .navbar-nav .active > a,
+  .navbar-inverse .navbar-nav .open > a {
+    background-color: transparent; /* Set the background color of the active link to yellow */
+    color: rgb(2, 2, 75); /* Set the text color of the active link to black */
+  }
+
+  .navbar-inverse .navbar-toggle {
+    border-color: white; /* Set the border color of the toggle button to white */
+  }
+
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: white; /* Set the color of the toggle button's bars to white */
+  }
+
+  .navbar-inverse .navbar-nav .dropdown-menu > li > a {
+    color: black; /* Set the color of dropdown menu items to black */
+  }
+
+  .quote-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 3px 10px;
+    border-radius: 0px;
+    margin-top: 2.5px; /* Vertically center the button within the navbar */
+    margin-bottom: auto;
+  }
+  .jumbotron-fullscreen {
+            background-image: url('img.jpg'); /* Replace 'your-image.jpg' with the URL of your image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            width: 100%;
+            height: 60vh; /* Adjust padding as needed */
+        }
+        .quote-button {
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .quote-button:hover {
+            background-color: white;
+            color: transparent;}
+            .footer-sections {
+            background-color: rgb(2, 2, 75); ;
+            color: white;
+            text-align: left;
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: row; /* Display footer sections in a row */
+            align-items: center;
+        }
+        .footer-icon {
+          font-size: 42px; /* Increase the icon size */
+    position: absolute;
+    top: 30px;
+    left: 30px; 
+   
+}
+        
+        .footer-content {
+            text-align: center; /* Align text to the left */
+        }
+  </style>
+</head>
+<body>
+  <div class="jumbotron text-center custom-jumbotron">
+    <h1>Builders</h1>
+</div>
+
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                  <li class="active"><a href="#" style="color: #f8bb38;">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Project</a></li>
+                  <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages
+                          <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Page 1</a></li>
+                          <li><a href="#">Page 2</a></li>
+                          <li><a href="#">Page 3</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#" class="quote-button">Get a Quote</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <div class="jumbotron-fullscreen">
+      <div>
+          <h2>We Are Professional</h2><br>
+          <h1>For Your Dream Project </h1><br>
+          <a href="#" class="quote-button">GET A QUOTE</a>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4 footer-sections" style="color: #fdd245; ;">
+        <span class="glyphicon glyphicon-wrench footer-icon"></span>
+        <div class="footer-content">
+            <h3>Expert Worker</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Our team of skilled professionals is dedicated to delivering excellence in every project. 
+              With a wealth of experience and expertise, 
+              our expert workers ensure top-notch craftsmanship and precision, turning your ideas into reality.</p>
+        </div>
+    </div>
+    <div class="col-xs-4 footer-sections" style="background-color: #fdd245; color: rgb(2, 2, 75); ">
+        <span class="glyphicon glyphicon-star footer-icon"></span>
+        <div class="footer-content">
+            <h3>Quality Work</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Our commitment to quality is unwavering. We take pride in delivering exceptional workmanship and 
+              superior results. With meticulous attention to detail, 
+              we guarantee that every project we undertake reflects our dedication to excellence.</p>
+        </div>
+    </div>
+    <div class="col-xs-4 footer-sections" style="color: #fdd245; ;">
+        <span class="glyphicon glyphicon-time footer-icon"></span>
+        <div class="footer-content">
+            <h3>24/7 Support</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>We understand that your needs don't follow a 9-to-5 schedule.
+               That's why our support team is available around the clock, 24/7.
+              we're here to provide you with reliable and timely service.
+              we're here to provide you with reliable and timely service.
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
